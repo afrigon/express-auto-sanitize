@@ -1,6 +1,6 @@
 {
   "name": "express-auto-sanitize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Express middleware that automatically sanitize user inputs",
   "main": "./index.js",
   "scripts": {},
@@ -11,6 +11,7 @@
   "keywords": [
     "express",
     "auto",
+    "automatic",
     "sanitize",
     "sanitizer",
     "security",
