@@ -1,11 +1,6 @@
-[![npm](https://img.shields.io/npm/dm/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-auto-sanitize) 
-[![npm](https://img.shields.io/npm/v/express-sanitizer.svg?style=flat-square)](https://github.com/markau/express-auto-sanitize)
-[![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/markau/express-sanitizer)
-[![dependencies](https://david-dm.org/markau/express-sanitizer.svg?style=flat-square)](https://david-dm.org/markau/express-sanitizer)
+![](https://raw.githubusercontent.com/afrigon/express-auto-sanitize/master/banner.jpg)
 
-# express-auto-sanitize
-
-An express middleware to auto sanitize user inputs
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Installation
 
