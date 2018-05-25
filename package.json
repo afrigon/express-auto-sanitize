@@ -1,0 +1,36 @@
+{
+  "name": "express-auto-sanitize",
+  "version": "1.0.0",
+  "description": "Express middleware that automatically sanitize user inputs",
+  "main": "./index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/afrigon/express-auto-sanitize.git"
+  },
+  "keywords": [
+    "express",
+    "auto",
+    "sanitize",
+    "sanitizer",
+    "security",
+    "injection",
+    "xss",
+    "cross",
+    "site",
+    "script",
+    "middleware"
+  ],
+  "author": {
+    "name": "Alexandre Frigon",
+    "email": "alexandre.frigon.1@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afrigon/express-auto-sanitize/issues"
+  },
+  "homepage": "https://github.com/afrigon/express-auto-sanitize",
+  "dependencies": {
+    "sanitizer": "^0.1.3"
+  }
+}
