@@ -1,0 +1,12 @@
+{
+    "extends": "standard",
+    "env": {
+        "mocha": true,
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "handle-callback-err": 0
+    },
+    "plugins": ["chai-friendly", "mocha"]
+}

@@ -1,11 +1,12 @@
 ![](https://raw.githubusercontent.com/afrigon/express-auto-sanitize/master/banner.jpg)
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![Download](https://img.shields.io/npm/dt/express-auto-sanitize.svg)
 
 ## Installation
 
 ```
-npm install --save express-auto-sanitize
+npm i --save express-auto-sanitize
 ```
 
 ## Usage
@@ -22,17 +23,18 @@ Mount the middleware
 const options = {
     query: Boolean,
     body: Boolean,
-    params: Boolean,
-    cookies: Boolean
+    cookies: Boolean,
+    original: Boolean, // will keep the original version in req.original
+    sanitizerFunction: Function // use your personnal sanitizing algorithm
 }
 app.use(sanitizer(options))
 ```
 
-**Note:** make sure you mount the sanitizer between the [body-parser](https://www.npmjs.com/package/body-parser) middleware and your routes declaration.
+**Note:** if you use the body option, make sure you mount the sanitizer between the [body-parser](https://www.npmjs.com/package/body-parser)/[cookie-parser](https://www.npmjs.com/package/cookie-parser) middleware and your routes declaration.
 
 ## Output
 
-After the middleware has processed the user's input the original input will be stored in ```req.original``` and the safe input will take place of the dangerous input.
+After the middleware has processed the input, the original version will be stored in ```req.original``` and the safe version will replace the dangerous input.
 
 ```javascript
 app.get('/', (req, res) => {
